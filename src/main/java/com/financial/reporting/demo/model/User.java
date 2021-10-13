@@ -1,15 +1,18 @@
 package com.financial.reporting.demo.model;
 
 import io.swagger.annotations.ApiModel;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotEmpty;
-import java.io.Serializable;
 
 @Data
 @ApiModel(description = "User Model")
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class User implements Serializable {
+public class User {
 
     @NotEmpty(message = "email can not be empty")
     private String email;

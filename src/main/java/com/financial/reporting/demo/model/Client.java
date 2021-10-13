@@ -12,6 +12,5 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Client implements Serializable {
 
-    @NotEmpty(message = "transactionId can not be empty")
     private String transactionId;
 }

@@ -2,13 +2,18 @@ package com.financial.reporting.demo.viewmodel;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDate;
 
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
+@Data
 @ApiModel(description = "Report DTO")
 public class ReportDTO {
 

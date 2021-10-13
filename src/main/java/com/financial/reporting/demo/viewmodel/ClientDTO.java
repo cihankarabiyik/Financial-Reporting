@@ -2,13 +2,14 @@ package com.financial.reporting.demo.viewmodel;
 
 import lombok.*;
 
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
 
-@Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Data
 public class ClientDTO implements Serializable {
 
     private String transactionId;
